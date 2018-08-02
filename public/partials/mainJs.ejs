@@ -1,0 +1,9 @@
+<%
+  const mainJsFiles = [].filter.call(htmlWebpackPlugin.files.js, function(file){
+    return file.indexOf('config') < 0;
+  });
+%>
+
+<% mainJsFiles.forEach(function(file){ %>
+  <script src="<%= file %>" type="text/javascript"></script>
+<% }) %>
