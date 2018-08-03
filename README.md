@@ -1,5 +1,5 @@
 
-# phoenix shopping mall
+# <%= name %>
 
 ## getting start
 

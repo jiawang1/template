@@ -1,6 +1,7 @@
 {
-	"name": "ec-ui-phoenix-shopping",
-	"version": "2018.29.1",
+	"name": "<%= name %>",
+  "version": "<%= version %>",
+  "description":"<%= description %>",
 	"private": true,
 	"dependencies": {
 		"autoprefixer": "7.1.6",
