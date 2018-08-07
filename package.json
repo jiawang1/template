@@ -1,7 +1,7 @@
 {
 	"name": "<%= name %>",
-  "version": "<%= version %>",
-  "description":"<%= description %>",
+	"version": "<%= version %>",
+	"description": "<%= description %>",
 	"private": true,
 	"dependencies": {
 		"autoprefixer": "7.1.6",
@@ -18,7 +18,7 @@
 		"dotenv": "4.0.0",
 		"dotenv-expand": "4.2.0",
 		"dva": "2.2.3",
-		"dva-loading": "2.0.1",
+		"dva-loading": "2.0.4",
 		"ejs-compiled-loader": "1.1.0",
 		"eslint": "4.10.0",
 		"eslint-config-airbnb": "16.1.0",
