@@ -11,7 +11,7 @@ const path = require('path');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
-// const devServerProxy = require(resolveApp('./config/dev-utils/devServerProxy'));
+const devServerProxy = require(resolveApp('./config/dev-utils/devServerProxy'));
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
@@ -88,7 +88,7 @@ module.exports = function(proxy, allowedHost, port) {
       disableDotRule: true
     },
     public: allowedHost,
-    // proxy: devServerProxy,
+    proxy: devServerProxy,
     before(app) {
       // This lets us open files from the runtime error overlay.
       app.use(errorOverlayMiddleware());
